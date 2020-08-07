@@ -62,17 +62,32 @@ body{
     line-height:1.5;
 }
 h1{
-    font-size:4rem;
+    font-size:8rem;
 }
 h2{
-    font-size: 1.6rem;
+    font-size: 4rem;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
 }
-
+.navmenu{
+    display: flex;
+    margin: 2%;
+}
+.headername{
+    display: flex;
+    align-content: center;
+    width: 50%;
+}
+.headername h2{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 2%;
+}
 .myprojectsbutton{
 text-align: center;
 margin-left:40%;
@@ -87,6 +102,7 @@ border-radius: 5%;
    background-image: url(https://picsum.photos/200/300);
    background-size: cover;
    background-position: center;
+   background-attachment:fixed;
    height:50vh;
    margin-left: 15%;
    margin-right: 15%;
@@ -112,10 +128,18 @@ padding: 5%;
     justify-content: space-between;
     margin:10%;
 }
+.projectimages p{
+    text-align: center;
+}
 footer{
 display: flex;
 justify-content: center;
+margin: 10%;
 }
-.contactbutton{
-
- }
+.footerbutton{
+border-radius: 5%;
+text-align: center;
+padding:1%;
+width: 10%;
+border: 5px solid pink;
+}
