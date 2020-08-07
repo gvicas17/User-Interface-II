@@ -133,9 +133,10 @@ padding: 5%;
 }
 footer{
 display: flex;
-justify-content: center;
+justify-content: space-between;
 margin: 10%;
 }
+
 .footerbutton{
 border-radius: 5%;
 text-align: center;
