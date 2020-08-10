@@ -99,7 +99,7 @@ border-radius: 5%;
 }
 .mainheroimage{
    display: flex;
-   background-image: url(https://picsum.photos/200/300);
+   background-image: url("images/chicagotrain.jpg")
    background-size: cover;
    background-position: center;
    background-attachment:fixed;
