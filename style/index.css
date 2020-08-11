@@ -26,7 +26,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    background-image: url(../images/blackbackground.jpg)
 }
 ol, ul {
 	list-style: none;
@@ -45,7 +46,7 @@ table {
 }
 *{box-sizing:border-box;
 max-width:100%;
-border: 1px solid aquamarine;
+/*border: 1px solid aquamarine;*/
 }
 
 /*start of CSS*/
@@ -59,7 +60,7 @@ body{
     font-size:1.8rem;
     line-height:1.5;
     font-family: 'Lato', sans-serif;
-    color: #4f4f4f;
+    color: lavenderblush;
 }
 h1, h2, h3, h4, h5, h6{
     letter-spacing: 2px;
@@ -67,12 +68,15 @@ h1, h2, h3, h4, h5, h6{
 }
 h1{
     font-size:10rem;
+    color:rgb(46, 150, 124);
 }
 h2{
     font-size: 6rem;
+    color: lavenderblush;
 }
 h3{
     font-size: 4rem;
+    color: lavenderblush;
 }
 a{
     text-decoration: none;
@@ -154,7 +158,7 @@ nav{
    background-size: cover;
    background-position: center top;
    background-attachment:fixed;
-   height:50vh;
+   height:80vh;
    justify-content: center;
    flex-direction: column;
 }
@@ -171,15 +175,115 @@ nav{
 /*footer*/
 footer{
 display: flex;
-justify-content: space-between;
-margin: 10%;
 flex-direction: column;
 text-align: center;
+}
+
+.socialmedialinks{ 
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 15%;
+    padding: 2%;
+}
+
+footer a{
+    padding: 12%;
+}
+
+.contactlink{
+    margin-bottom: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: #80C0D8;
+    border-radius: 10px;
+    border: 5px rgb(46, 150, 124) solid;
+}
+
+.contactlink:hover{
+    background-color: rgb(46, 150, 124);
+    color: white;
+    border: 5px #80C0D8 solid;
+}
+
+/*about me css*/
+.aboutmeheader{ 
+    text-align: center;
+}
+.heroimageabout{ 
+   background-image: url(../images/chicagotrain.jpg);
+   background-size: cover;
+   background-position: center;
+   background-attachment:fixed;
+   height:80vh;
+   display: flex;
+   justify-content: center;
+}
+
+.aboutmeinfo{
+    text-align: center;
 }
 
 
 /*sizing css*/
 /*sizing for 800px*/
 @media(max-width: 800px){
-
-}
+    nav{
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5%;
+    }
+    .navmenu{
+      flex-direction: column;
+      align-items: center;
+      padding: 1%;
+    }
+    .homenav{
+      margin: 1%;
+    }
+    .aboutnav{
+      margin: 1%;
+    }
+    .contactnav{
+      margin: 1%;
+    }
+    .projectsnav{
+      margin: 1%;
+    }
+    .maintitle h3{
+      width: 30%;
+    }
+    .topleft{
+      width: 40%;
+    }
+    .topright{
+      width:40%;
+    }
+    .topcenter{
+      width:40%;
+    }
+    .bottomleft{
+      width: 40%;
+    }
+    .bottomcenter{
+      width: 40%;
+    }
+    .bottomright{
+      width: 40%;
+    }
+    .contactlink{
+      width:30%;
+    }
+  }
+  /*css for 500px*/
+  @media(max-width: 500px){
+    .maintitle h3{
+      width: 50%;
+      margin-left: 27%;
+    }
+    .socialmedialinks{
+      justify-content: center;
+    }
+    .contactlink{
+      width: 50%;
+      margin-left: 27%;
+    }  
