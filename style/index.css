@@ -58,12 +58,15 @@ html{
 body{
     font-size:1.8rem;
     line-height:1.5;
+    font-family: 'Lato', sans-serif;
+    color: #4f4f4f;
 }
 h1, h2, h3, h4, h5, h6{
     letter-spacing: 2px;
+    font-family: 'Indie Flower', cursive;
 }
 h1{
-    font-size:8rem;
+    font-size:10rem;
 }
 h2{
     font-size: 6rem;
@@ -81,29 +84,68 @@ nav{
     justify-content: space-between;
     width:100%;
 }
+.headername{
+    margin-left: 3%;
+}
 .navmenu{
     display: flex;
    justify-content: space-around;
    width: 70%;
-   margin: 1% 0;
+   margin: 2% 0;
+}
+.homenav{
+    width:100px;
+    padding 1%;
+    border-radius:10px;
+    border:3px solid rgb(46, 150, 124);
+    text-align: center;
+    background-color: #80C0D8;
+}
+.aboutnav{
+    width:100px;
+    padding 1%;
+    border-radius:10px;
+    border:3px solid rgb(46, 150, 124);
+    text-align: center;
+    background-color: #80C0D8;
+}
+.contactnav{
+    width:100px;
+    padding 1%;
+    border-radius:10px;
+    border:3px solid rgb(46, 150, 124);
+    text-align: center;
+    background-color: #80C0D8;
+}
+.projectsnav{
+    width:100px;
+    padding 1%;
+    border-radius:10px;
+    border:3px solid rgb(46, 150, 124);
+    text-align: center;
+    background-color: #80C0D8;
 }
 
-.myprojectslink{
-    background-color: white;
+/*scroll image & title*/
+
+.maintitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }
+
+.maintitle h3{
+    background-color: #80C0D8;
     margin: 2% 40%;
     border-radius: 10px;
-    border: 5px pink dotted;
+    border: 5px rgb(46, 150, 124) solid;
     padding: 0%;
-    
 }
-
-.myprojectslink h3{
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.headername{
-    margin-left: 3%;
+.maintitle h3:hover{
+    background-color: rgb(46, 150, 124);
+    color: white;
+    border: 5px #80C0D8 solid;
 }
 
 .mainheroimage{
@@ -116,27 +158,13 @@ nav{
    justify-content: center;
    flex-direction: column;
 }
-.maintitle{
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-}
 
 /*middle section*/
-.topimages{
+.projectimages{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin:10%;
-}
-.bottomimages{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin:10%;
-}
-.projectimages p{
     text-align: center;
 }
 
