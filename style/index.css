@@ -1,8 +1,4 @@
-/* Add CSS styling here */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* css reset*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -54,68 +50,80 @@ border: 1px solid aquamarine;
 
 /*start of CSS*/
 
+/*general styles*/
+
 html{
   font-size:62.5%;
 }
 body{
-    font-size:1.6rem;
+    font-size:1.8rem;
     line-height:1.5;
+}
+h1, h2, h3, h4, h5, h6{
+    letter-spacing: 2px;
 }
 h1{
     font-size:8rem;
 }
 h2{
+    font-size: 6rem;
+}
+h3{
     font-size: 4rem;
 }
+a{
+    text-decoration: none;
+}
 
+/*header styles*/
 nav{
     display: flex;
     justify-content: space-between;
+    width:100%;
 }
 .navmenu{
     display: flex;
-    margin: 2%;
+   justify-content: space-around;
+   width: 70%;
+   margin: 1% 0;
 }
+
+.myprojectslink{
+    background-color: white;
+    margin: 2% 40%;
+    border-radius: 10px;
+    border: 5px pink dotted;
+    padding: 0%;
+    
+}
+
+.myprojectslink h3{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
 .headername{
-    display: flex;
-    align-content: center;
-    width: 50%;
+    margin-left: 3%;
 }
-.headername h2{
-    display: flex;
-    align-content: center;
-    text-align: center;
-    margin-left: 2%;
-    margin-top: 2%;
-}
-.myprojectsbutton{
-text-align: center;
-margin-left:40%;
-margin-right:40%;
-padding-top:2%;
-padding-bottom: 2%;
-border: 5px solid pink;
-border-radius: 5%;
-}
+
 .mainheroimage{
    display: flex;
-   background-image: url("images/chicagotrain.jpg")
+   background-image: url('../images/multicoloredbackground.jpg');
    background-size: cover;
-   background-position: center;
+   background-position: center top;
    background-attachment:fixed;
    height:50vh;
-   margin-left: 15%;
-   margin-right: 15%;
    justify-content: center;
    flex-direction: column;
 }
 .maintitle{
+display: flex;
+flex-direction: column;
+justify-content: center;
 text-align: center;
-padding: 5%;
 }
-.maintitle h1{
-padding: 5%;
-}
+
+/*middle section*/
 .topimages{
     display:flex;
     flex-wrap: wrap;
@@ -131,16 +139,19 @@ padding: 5%;
 .projectimages p{
     text-align: center;
 }
+
+/*footer*/
 footer{
 display: flex;
 justify-content: space-between;
 margin: 10%;
+flex-direction: column;
+text-align: center;
 }
 
-.footerbutton{
-border-radius: 5%;
-text-align: center;
-padding:1%;
-width: 10%;
-border: 5px solid pink;
+
+/*sizing css*/
+/*sizing for 800px*/
+@media(max-width: 800px){
+
 }
